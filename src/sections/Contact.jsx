@@ -1,4 +1,4 @@
-import { Code2, Link, Mail, Phone, Send } from 'lucide-react'
+import { Code2, Link, Mail, Send } from 'lucide-react'
 import Reveal from '../components/Reveal.jsx'
 
 const socialLinks = [
@@ -62,13 +62,6 @@ export default function Contact() {
                 >
                   <Mail size={19} />
                   riheasingh07234@gmail.com
-                </a>
-                <a
-                  href="tel:+918092597612"
-                  className="mt-3 flex items-center gap-3 text-sm text-blue-300 transition hover:text-blue-200"
-                >
-                  <Phone size={19} />
-                  8092597612
                 </a>
                 <p className="mt-6 leading-7 text-slate-400">
                   Prefer email? Feel free to contact me directly or connect with me through my developer profiles.

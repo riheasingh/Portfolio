@@ -10,10 +10,10 @@ export default function Education() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="mb-14 text-center">
-            <p className="mb-3 text-xs font-normal uppercase tracking-[0.35em] text-blue-300">Education</p>
-            <h2 className="font-display text-2xl font-black tracking-normal text-transparent bg-[linear-gradient(110deg,#f8fafc,#7dd3fc,#38bdf8,#818cf8)] bg-clip-text sm:text-3xl">
-              Academic Journey
+            <h2 className="font-display text-3xl font-black tracking-normal text-transparent bg-[linear-gradient(110deg,#f8fafc,#7dd3fc,#38bdf8,#818cf8)] bg-clip-text sm:text-4xl">
+              Education
             </h2>
+            <p className="mt-4 text-sm font-normal uppercase tracking-[0.28em] text-blue-300">Academic Journey</p>
             <div className="mx-auto mt-6 h-1 w-28 rounded-full bg-gradient-to-r from-blue-300 via-cyan-300 to-indigo-400 shadow-[0_0_28px_rgba(37,99,235,0.35)]" />
           </div>
         </Reveal>
