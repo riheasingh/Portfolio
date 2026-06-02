@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { Download, Menu, Moon, Sun, X } from 'lucide-react'
+import { FileText, Menu, Moon, Sun, X } from 'lucide-react'
 import { navLinks } from '../data/portfolio.js'
 
-export default function Navbar({ theme, setTheme }) {
+export default function Navbar({ theme, setTheme, openResume }) {
   const [active, setActive] = useState('home')
   const [open, setOpen] = useState(false)
 
@@ -75,14 +75,14 @@ export default function Navbar({ theme, setTheme }) {
         </div>
 
         <div className="flex items-center gap-2">
-          <a
-            href="/Riya-Kumari-Resume.pdf"
-            download
+          <button
+            type="button"
+            onClick={openResume}
             className="hidden min-h-10 items-center gap-2 rounded-full border border-blue-300/70 px-5 py-2 text-xs font-normal text-blue-300 shadow-[0_0_26px_rgba(37,99,235,0.18)] transition hover:-translate-y-0.5 hover:bg-blue-300 hover:text-slate-950 lg:inline-flex"
           >
-            <Download size={16} />
-            Resume
-          </a>
+            <FileText size={16} />
+            Get Resume
+          </button>
           <button
             type="button"
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}

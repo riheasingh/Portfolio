@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
+import ResumeModal from './components/ResumeModal.jsx'
 import Home from './sections/Home.jsx'
 import About from './sections/About.jsx'
 import Projects from './sections/Projects.jsx'
@@ -21,6 +22,7 @@ function getInitialTheme() {
 
 export default function App() {
   const [theme, setTheme] = useState(getInitialTheme)
+  const [isResumeOpen, setIsResumeOpen] = useState(false)
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', theme === 'dark')
@@ -29,9 +31,9 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-cream-50 text-slate-900 transition-colors duration-500 dark:bg-slate-950 dark:text-white">
-      <Navbar theme={theme} setTheme={setTheme} />
+      <Navbar theme={theme} setTheme={setTheme} openResume={() => setIsResumeOpen(true)} />
       <main>
-        <Home />
+        <Home openResume={() => setIsResumeOpen(true)} />
         <About />
         <Education />
         <Skills />
@@ -40,6 +42,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <ResumeModal isOpen={isResumeOpen} onClose={() => setIsResumeOpen(false)} />
     </div>
   )
 }

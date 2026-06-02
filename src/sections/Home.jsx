@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { Download, Mail, Mouse } from 'lucide-react'
+import { FileText, Mail, Mouse } from 'lucide-react'
 
 const typingWords = ['Computer Science Engineer', 'Full Stack Developer', 'Problem Solver']
 
@@ -36,7 +36,7 @@ function useTypingEffect(words) {
   return text
 }
 
-export default function Home() {
+export default function Home({ openResume }) {
   const typedText = useTypingEffect(typingWords)
 
   const scrollToContact = () => {
@@ -108,10 +108,10 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.32, ease: 'easeOut' }}
         >
-          <a href="/Riya-Kumari-Resume.pdf" download className="btn-neon-primary">
-            <Download size={18} />
-            Download Resume
-          </a>
+          <button type="button" onClick={openResume} className="btn-neon-primary">
+            <FileText size={18} />
+            Get Resume
+          </button>
           <button type="button" onClick={scrollToContact} className="btn-neon-outline">
             <Mail size={18} />
             Contact Me

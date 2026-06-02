@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
 import { CalendarDays, GraduationCap, Laptop, Sparkles } from 'lucide-react'
-import profileImage from '../assets/profile-riya.png'
 import Reveal from '../components/Reveal.jsx'
 
 const aboutStats = [
@@ -28,15 +27,12 @@ export default function About() {
         <div className="grid items-center gap-12 lg:grid-cols-[0.85fr_1.45fr]">
           <Reveal>
             <motion.div
-              className="relative mx-auto grid aspect-square w-full max-w-sm place-items-center rounded-full"
+              className="relative mx-auto grid aspect-square w-full max-w-sm place-items-center"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
             >
-              <div className="absolute inset-0 rounded-full border border-blue-300/25" />
-              <div className="absolute inset-6 rounded-full border-2 border-blue-300 shadow-[0_0_44px_rgba(37,99,235,0.28)]" />
-              <div className="absolute inset-2 rounded-full border border-indigo-300/45 border-b-cyan-300 border-l-blue-300" />
-              <div className="relative h-[72%] w-[72%] overflow-hidden rounded-full border-4 border-blue-400/80 bg-slate-900 shadow-[0_0_60px_rgba(37,99,235,0.22)]">
-                <img src={profileImage} alt="Riya Kumari" className="h-full w-full object-cover" />
+              <div className="relative h-[78%] w-[78%] overflow-hidden rounded-[1.45rem] bg-slate-900 shadow-[0_0_60px_rgba(37,99,235,0.22)]">
+                <img src="/Riya.png" alt="Riya Kumari" className="h-full w-full object-cover" />
               </div>
             </motion.div>
           </Reveal>

@@ -370,6 +370,148 @@ img {
   color: white;
 }
 
+html:not(.dark) #home,
+html:not(.dark) #about,
+html:not(.dark) #education,
+html:not(.dark) #skills,
+html:not(.dark) #projects,
+html:not(.dark) #contact {
+  background: #f8fbff !important;
+  color: #0f172a !important;
+}
+
+html:not(.dark) #home > .absolute:first-child,
+html:not(.dark) #about > .absolute:first-child,
+html:not(.dark) #education > .absolute:first-child,
+html:not(.dark) #skills > .absolute:first-child,
+html:not(.dark) #projects > .absolute:first-child,
+html:not(.dark) #contact > .absolute:first-child {
+  background:
+    radial-gradient(circle at 14% 18%, rgba(56, 189, 248, 0.16), transparent 30%),
+    radial-gradient(circle at 82% 74%, rgba(129, 140, 248, 0.12), transparent 34%),
+    linear-gradient(135deg, #ffffff, #eef7ff 52%, #f4f7ff) !important;
+}
+
+html:not(.dark) .star-field {
+  opacity: 0.18 !important;
+}
+
+html:not(.dark) header {
+  background: rgba(248, 251, 255, 0.84) !important;
+  border-color: rgba(15, 23, 42, 0.1) !important;
+}
+
+html:not(.dark) header .text-white,
+html:not(.dark) header .text-slate-200,
+html:not(.dark) header .text-slate-300 {
+  color: #0f172a !important;
+}
+
+html:not(.dark) header .text-slate-400 {
+  color: #64748b !important;
+}
+
+html:not(.dark) .bg-clip-text {
+  background-image: linear-gradient(110deg, #0f172a, #1d4ed8, #0284c7, #4f46e5) !important;
+}
+
+html:not(.dark) .text-blue-200,
+html:not(.dark) .text-blue-300 {
+  color: #1d4ed8 !important;
+}
+
+html:not(.dark) .text-cyan-200,
+html:not(.dark) .text-cyan-300 {
+  color: #0284c7 !important;
+}
+
+html:not(.dark) .text-indigo-200,
+html:not(.dark) .text-indigo-300 {
+  color: #4f46e5 !important;
+}
+
+html:not(.dark) .text-sky-200,
+html:not(.dark) .text-sky-300 {
+  color: #0369a1 !important;
+}
+
+html:not(.dark) #home .text-white,
+html:not(.dark) #about .text-white,
+html:not(.dark) #education .text-white,
+html:not(.dark) #skills .text-white,
+html:not(.dark) #projects .text-white,
+html:not(.dark) #contact .text-white {
+  color: #0f172a !important;
+}
+
+html:not(.dark) #home .text-slate-200,
+html:not(.dark) #about .text-slate-200,
+html:not(.dark) #education .text-slate-200,
+html:not(.dark) #skills .text-slate-200,
+html:not(.dark) #projects .text-slate-200,
+html:not(.dark) #contact .text-slate-200,
+html:not(.dark) #home .text-slate-300,
+html:not(.dark) #about .text-slate-300,
+html:not(.dark) #education .text-slate-300,
+html:not(.dark) #skills .text-slate-300,
+html:not(.dark) #projects .text-slate-300,
+html:not(.dark) #contact .text-slate-300,
+html:not(.dark) #home .text-slate-400,
+html:not(.dark) #about .text-slate-400,
+html:not(.dark) #education .text-slate-400,
+html:not(.dark) #skills .text-slate-400,
+html:not(.dark) #projects .text-slate-400,
+html:not(.dark) #contact .text-slate-400 {
+  color: #475569 !important;
+}
+
+html:not(.dark) #about article,
+html:not(.dark) #education article,
+html:not(.dark) #skills article,
+html:not(.dark) #projects article,
+html:not(.dark) #contact form,
+html:not(.dark) #contact aside,
+html:not(.dark) #coding-profile article {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(37, 99, 235, 0.22) !important;
+  box-shadow: 0 24px 70px -38px rgba(15, 23, 42, 0.32) !important;
+}
+
+html:not(.dark) #projects article > div:first-child,
+html:not(.dark) #coding-profile .bg-slate-950 {
+  background: #eef6ff !important;
+}
+
+html:not(.dark) #skills span.rounded-full,
+html:not(.dark) #projects span.rounded-full,
+html:not(.dark) #education p.rounded-full,
+html:not(.dark) #contact a.rounded-full {
+  background: rgba(239, 246, 255, 0.95) !important;
+  border-color: rgba(37, 99, 235, 0.18) !important;
+  color: #1e293b !important;
+}
+
+html:not(.dark) .btn-neon-outline {
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(37, 99, 235, 0.35);
+  color: #1d4ed8;
+}
+
+html:not(.dark) #contact .text-slate-400,
+html:not(.dark) #contact .text-slate-200 {
+  color: #475569 !important;
+}
+
+html:not(.dark) .contact-input {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(59, 130, 246, 0.22);
+  color: #0f172a;
+}
+
+html:not(.dark) .contact-input::placeholder {
+  color: #94a3b8;
+}
+
 @media (max-width: 640px) {
   .section-pad {
     padding-block: 3.75rem;

@@ -37,7 +37,7 @@ const skillCards = [
     title: 'Tools',
     icon: Wrench,
     tone: 'blue',
-    items: ['Git', 'GitHub', 'VS Code', 'Postman'],
+    items: ['Git', 'GitHub', 'Postman'],
   },
 ]
 
