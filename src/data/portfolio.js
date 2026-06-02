@@ -73,7 +73,7 @@ export const projects = [
     tech: ['React', 'Node.js', 'Express', 'JavaScript', 'MongoDB', 'Socket.io', 'JWT'],
     live: 'https://devtinder-iota.vercel.app/',
     github: 'https://github.com/riheasingh',
-    thumbnail: '/Devtinder.png',
+    thumbnail: '/devtinder.png',
     icon: TerminalSquare,
     color: 'from-blue-500 via-cyan-500 to-indigo-500',
   },
